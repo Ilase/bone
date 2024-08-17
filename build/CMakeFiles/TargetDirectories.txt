@@ -1,0 +1,3 @@
+/home/ilase/Documents/Work/C-C++/touch_ssh/build/CMakeFiles/touch_ssh.dir
+/home/ilase/Documents/Work/C-C++/touch_ssh/build/CMakeFiles/edit_cache.dir
+/home/ilase/Documents/Work/C-C++/touch_ssh/build/CMakeFiles/rebuild_cache.dir
