@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/touch_ssh.dir/src/main.cpp.o -o touch_ssh  -lssh 
