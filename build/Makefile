@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ilase/Documents/Work/C-C++/touch_ssh
+CMAKE_SOURCE_DIR = /home/ilase/Documents/Work/C-C++/calagen
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ilase/Documents/Work/C-C++/touch_ssh/build
+CMAKE_BINARY_DIR = /home/ilase/Documents/Work/C-C++/calagen/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -85,11 +85,56 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilase/Documents/Work/C-C++/touch_ssh/build/CMakeFiles /home/ilase/Documents/Work/C-C++/touch_ssh/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles /home/ilase/Documents/Work/C-C++/calagen/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilase/Documents/Work/C-C++/touch_ssh/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +162,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named touch_ssh
+# Target rules for targets named bone
 
 # Build rule for target.
-touch_ssh: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 touch_ssh
-.PHONY : touch_ssh
+bone: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bone
+.PHONY : bone
 
 # fast build rule for target.
-touch_ssh/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/touch_ssh.dir/build.make CMakeFiles/touch_ssh.dir/build
-.PHONY : touch_ssh/fast
+bone/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bone.dir/build.make CMakeFiles/bone.dir/build
+.PHONY : bone/fast
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+include/calagen.o: include/calagen.cpp.o
+.PHONY : include/calagen.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/touch_ssh.dir/build.make CMakeFiles/touch_ssh.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+include/calagen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bone.dir/build.make CMakeFiles/bone.dir/include/calagen.cpp.o
+.PHONY : include/calagen.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+include/calagen.i: include/calagen.cpp.i
+.PHONY : include/calagen.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/touch_ssh.dir/build.make CMakeFiles/touch_ssh.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+include/calagen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bone.dir/build.make CMakeFiles/bone.dir/include/calagen.cpp.i
+.PHONY : include/calagen.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+include/calagen.s: include/calagen.cpp.s
+.PHONY : include/calagen.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/touch_ssh.dir/build.make CMakeFiles/touch_ssh.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+include/calagen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bone.dir/build.make CMakeFiles/bone.dir/include/calagen.cpp.s
+.PHONY : include/calagen.cpp.s
 
 # Help Target
 help:
@@ -160,11 +205,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... touch_ssh"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... bone"
+	@echo "... include/calagen.o"
+	@echo "... include/calagen.i"
+	@echo "... include/calagen.s"
 .PHONY : help
 
 

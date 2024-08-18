@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ilase/Documents/Work/C-C++/touch_ssh/src/main.cpp" "CMakeFiles/touch_ssh.dir/src/main.cpp.o" "gcc" "CMakeFiles/touch_ssh.dir/src/main.cpp.o.d"
+  "/home/ilase/Documents/Work/C-C++/calagen/src/main.cpp" "CMakeFiles/touch_ssh.dir/src/main.cpp.o" "gcc" "CMakeFiles/touch_ssh.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

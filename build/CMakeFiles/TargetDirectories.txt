@@ -1,3 +1,7 @@
-/home/ilase/Documents/Work/C-C++/touch_ssh/build/CMakeFiles/touch_ssh.dir
-/home/ilase/Documents/Work/C-C++/touch_ssh/build/CMakeFiles/edit_cache.dir
-/home/ilase/Documents/Work/C-C++/touch_ssh/build/CMakeFiles/rebuild_cache.dir
+/home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles/bone.dir
+/home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles/edit_cache.dir
+/home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles/rebuild_cache.dir
+/home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles/list_install_components.dir
+/home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles/install.dir
+/home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles/install/local.dir
+/home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles/install/strip.dir

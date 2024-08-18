@@ -1,5 +1,5 @@
 CMakeFiles/touch_ssh.dir/src/main.cpp.o: \
- /home/ilase/Documents/Work/C-C++/touch_ssh/src/main.cpp \
+ /home/ilase/Documents/Work/C-C++/calagen/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/libssh/libssh.h \
  /usr/include/libssh/libssh_version.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h /usr/include/unistd.h \

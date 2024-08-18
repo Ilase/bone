@@ -54,16 +54,16 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ilase/Documents/Work/C-C++/touch_ssh
+CMAKE_SOURCE_DIR = /home/ilase/Documents/Work/C-C++/calagen
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ilase/Documents/Work/C-C++/touch_ssh/build
+CMAKE_BINARY_DIR = /home/ilase/Documents/Work/C-C++/calagen/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/touch_ssh.dir/all
+all: CMakeFiles/bone.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/touch_ssh.dir/clean
+clean: CMakeFiles/bone.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/touch_ssh.dir
+# Target rules for target CMakeFiles/bone.dir
 
 # All Build rule for target.
-CMakeFiles/touch_ssh.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/touch_ssh.dir/build.make CMakeFiles/touch_ssh.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/touch_ssh.dir/build.make CMakeFiles/touch_ssh.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ilase/Documents/Work/C-C++/touch_ssh/build/CMakeFiles --progress-num=1,2 "Built target touch_ssh"
-.PHONY : CMakeFiles/touch_ssh.dir/all
+CMakeFiles/bone.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bone.dir/build.make CMakeFiles/bone.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bone.dir/build.make CMakeFiles/bone.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles --progress-num=1,2 "Built target bone"
+.PHONY : CMakeFiles/bone.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/touch_ssh.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilase/Documents/Work/C-C++/touch_ssh/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/touch_ssh.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilase/Documents/Work/C-C++/touch_ssh/build/CMakeFiles 0
-.PHONY : CMakeFiles/touch_ssh.dir/rule
+CMakeFiles/bone.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/bone.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilase/Documents/Work/C-C++/calagen/build/CMakeFiles 0
+.PHONY : CMakeFiles/bone.dir/rule
 
 # Convenience name for target.
-touch_ssh: CMakeFiles/touch_ssh.dir/rule
-.PHONY : touch_ssh
+bone: CMakeFiles/bone.dir/rule
+.PHONY : bone
 
 # clean rule for target.
-CMakeFiles/touch_ssh.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/touch_ssh.dir/build.make CMakeFiles/touch_ssh.dir/clean
-.PHONY : CMakeFiles/touch_ssh.dir/clean
+CMakeFiles/bone.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bone.dir/build.make CMakeFiles/bone.dir/clean
+.PHONY : CMakeFiles/bone.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
