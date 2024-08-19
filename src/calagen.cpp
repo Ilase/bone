@@ -1,4 +1,5 @@
 #include "calagen.hpp"
+#include <calagen.hpp>
 
 bone::calagen::calagen(std::string name, std::string adress, int port){
     this->name = name;

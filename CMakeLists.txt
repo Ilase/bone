@@ -11,6 +11,7 @@ project(
 set(BONE_LIBRARY_VERISION_MAJOR 1 CACHE STRING "major version" FORCE)
 set(BONE_LIBRARY_VERISION_MINOR 0 CACHE STRING "minor version" FORCE)
 set(BONE_VERSION ${BONE_LIBRARY_VERISION_MAJOR}.${BONE_LIBRARY_VERISION_MINOR} CACHE STRING "version" FORCE)
+set(BONE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
 set(tool_dest "bin")
 set(include_dest "include/bone-${BONE_VERSION}")
 set(main_lib_dest "lib/bone-${BONE_VERSION}")
@@ -32,17 +33,11 @@ add_subdirectory(src)
 # include(FindPkgConfig)
 # pkg_check_modules(libSSH REQUIRED libssh)
 #==================================================
-include(FindPkgConfig)
-pkg_check_modules(LIBSSH REQUIRED libssh)
 
-#==================================================
-target_link_libraries(${PROJECT_NAME} 
-    PRIVATE ${LIBSSH_LIBRARIES}
-)
 
 target_include_directories(${PROJECT_NAME} 
     PRIVATE ${LIBSSH_INCLUDE_DIRS}
-    PUBLIC ${BONE__SOURCE_DIR}/include
+    PUBLIC ${SOURCE_DIR}/include
     ${CMAKE_CURRENT_BINARY_DIR}
 )
 #==================================================
