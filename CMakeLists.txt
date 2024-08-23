@@ -15,6 +15,7 @@ set(BONE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
 set(tool_dest "bin")
 set(include_dest "include/bone-${BONE_VERSION}")
 set(main_lib_dest "lib/bone-${BONE_VERSION}")
+set(lib_dest ${main_lib_dest}/${CMAKE_BUILD_TYPE})
 # set(LIBSSH_INCLUDE_DIR "/usr/include/libssh")
 # set(LIBSSH_LIBRARIES "/usr/lib/x86_64-linux-gnu/libssh.a" )
 
@@ -41,7 +42,10 @@ target_include_directories(${PROJECT_NAME}
     ${CMAKE_CURRENT_BINARY_DIR}
 )
 #==================================================
-
+# get_filename_component(SELF_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+# include(${SELF_DIR}/${CMAKE_BUILD_TYPE}bone-config.cmake)
+# install(FILES bone-config.cmake DESTINATION ${main_lib_dest})
+# install(EXPORT bone DESTINATION ${main_lib_dest})
 #==================================================
 
 
